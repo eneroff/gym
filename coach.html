@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тренера</title>
+  <link rel="stylesheet" href="sport.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/logo.png"> </img>
+    <nav class="list">
+      <a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/sport.html"class="list">Главная</a>
+      <a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/services.html"class="list">Услуги</a>
+      <a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/stocks.html"class="list">Акции</a>
+      <a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/about_us.html"class="list">О нас</a>
+    </nav>
+    <div class="phone">+375 (29) 631-55-21</div>
+  </header>
+
+  <div class="text-container">
+    <span class="text">KOMISSPORT</span>
+  </div>
+
+<section class="trainers">
+
+    <div class="trainers-grid">
+      <div class="trainer-card" onclick="openModal('modal-ivan')">
+        <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/trainer1.jpg" alt="Иван Иванов">
+        <h3>Иван Иванов</h3>
+        <p>Мастер спорта, специалист по функциональному тренингу.</p>
+        <p>Стаж: 7 лет</p>
+        <p2>
+          <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/instagram.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; margin-bottom: 2px;">
+          Instagram: ivan_ivanov
+        </p2>
+      </div>
+
+      <div class="trainer-card" onclick="openModal('modal-maria')">
+        <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/trainer2.jpg" alt="Мария Смирнова">
+        <h3>Мария Смирнова</h3>
+        <p>Сертифицированный тренер по йоге и пилатесу.</p>
+        <p>Стаж: 6 лет</p>
+        <p2>
+          <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/instagram.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; margin-bottom: 2px;">
+          Instagram: maria_smirnova
+        </p2>
+      </div>
+
+      <div class="trainer-card" onclick="openModal('modal-alexey')">
+        <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/trainer3.jpg" alt="Алексей Петров">
+        <h3>Алексей Петров</h3>
+        <p>Персональный тренер, специализация – силовой тренинг.</p>
+        <p>Стаж: 10 лет</p>
+        <p2>
+          <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/instagram.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; margin-bottom: 2px;">
+          Instagram: alex_petrov
+        </p2>
+      </div>
+
+      <div class="trainer-card" onclick="openModal('modal-olga')">
+        <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/trainer4.jpg" alt="Ольга Викторова">
+        <h3>Ольга Викторова</h3>
+        <p>Тренер по аэробике, зумба и кардио-тренингам.</p>
+        <p>Стаж: 8 лет</p>
+        <p2>
+          <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/instagram.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; margin-bottom: 2px;">
+          Instagram: olga_viktorova
+        </p2>
+      </div>
+
+      <div class="trainer-card" onclick="openModal('modal-sergey')">
+        <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/trainer5.jpg" alt="Сергей Лебедев">
+        <h3>Сергей Лебедев</h3>
+        <p>Инструктор по кроссфиту и функциональному тренингу.</p>
+        <p>Стаж: 9 лет</p>
+        <p2>
+          <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/instagram.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; margin-bottom: 2px;">
+          Instagram: sergey_lebedev
+        </p2>
+      </div>
+
+      <div class="trainer-card" onclick="openModal('modal-natalia')">
+        <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/trainer6.jpg" alt="Наталья Зайцева">
+        <h3>Наталья Зайцева</h3>
+        <p>Тренер по танцевальным направлениям. Поможет развить гибкость.</p>
+        <p>Стаж: 5 лет</p>
+        <p2>
+          <img src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/instagram.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; margin-bottom: 2px;">
+          Instagram: natalia_zaytseva
+        </p2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальные окна -->
+  <div id="modal-ivan" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-ivan')">&times;</span>
+      <h2>Иван Иванов</h2>
+      <p>+375 29 899 35 88</p>
+      <p><a href="https://www.instagram.com/ivan_ivanov" target="_blank">www.instagram.com/ivan_ivanov</a></p>
+      <p>Стоимость персональной тренировки: 50 р.</p>
+      <p>Опыт работы: 7 лет</p>
+      <p>Стаж собственных тренировок: 15 лет</p>
+      <p>Образование: Высшее. Специальность: «Физическая культура и спорт».</p>
+      <p>Достижения:</p>
+      <ul>
+        <li>Мастер спорта по функциональному тренингу</li>
+        <li>Победитель национальных соревнований по кроссфиту</li>
+      </ul>
+      <p>Специализация:</p>
+      <ul>
+        <li>Персональные тренировки в тренажерном зале</li>
+        <li>Функциональный тренинг</li>
+        <li>Разработка программ для коррекции веса и повышения выносливости</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modal-maria" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-maria')">&times;</span>
+      <h2>Мария Смирнова</h2>
+      <p>+375 29 765 24 11</p>
+      <p><a href="https://www.instagram.com/maria_smirnova" target="_blank">www.instagram.com/maria_smirnova</a></p>
+      <p>Стоимость персональной тренировки: 40 р.</p>
+      <p>Опыт работы: 6 лет</p>
+      <p>Стаж собственных тренировок: 12 лет</p>
+      <p>Образование: Сертификат международного уровня по йоге и пилатесу.</p>
+      <p>Достижения:</p>
+      <ul>
+        <li>Победительница городского марафона по йоге</li>
+        <li>Сертифицированный инструктор пилатеса</li>
+      </ul>
+      <p>Специализация:</p>
+      <ul>
+        <li>Групповые занятия по йоге</li>
+        <li>Персональные тренировки по пилатесу</li>
+        <li>Развитие гибкости и снятие стресса через медитации</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modal-alexey" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-alexey')">&times;</span>
+      <h2>Алексей Петров</h2>
+      <p>+375 29 654 12 09</p>
+      <p><a href="https://www.instagram.com/alex_petrov" target="_blank">www.instagram.com/alex_petrov</a></p>
+      <p>Стоимость персональной тренировки: 45 р.</p>
+      <p>Опыт работы: 10 лет</p>
+      <p>Стаж собственных тренировок: 18 лет</p>
+      <p>Образование: Высшее. Специальность: «Тренерская деятельность в силовых дисциплинах».</p>
+      <p>Достижения:</p>
+      <ul>
+        <li>Кандидат в мастера спорта по пауэрлифтингу</li>
+        <li>Призер международного чемпионата по бодибилдингу</li>
+      </ul>
+      <p>Специализация:</p>
+      <ul>
+        <li>Силовые тренировки</li>
+        <li>Набор мышечной массы</li>
+        <li>Составление программ для повышения силовых показателей</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modal-olga" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-olga')">&times;</span>
+      <h2>Ольга Викторова</h2>
+      <p>+375 29 123 45 67</p>
+      <p><a href="https://www.instagram.com/olga_viktorova" target="_blank">www.instagram.com/olga_viktorova</a></p>
+      <p>Стоимость персональной тренировки: 45 р.</p>
+      <p>Опыт работы: 8 лет</p>
+      <p>Стаж собственных тренировок: 14 лет</p>
+      <p>Образование: Диплом о высшем образовании в области фитнеса и здоровья.</p>
+      <p>Достижения:</p>
+      <ul>
+        <li>Инструктор зумбы международного уровня</li>
+        <li>Победительница марафона "Фитнес-саммит"</li>
+      </ul>
+      <p>Специализация:</p>
+      <ul>
+        <li>Групповые занятия по аэробике и кардио</li>
+        <li>Танцевальные программы</li>
+        <li>Разработка тренировок для повышения выносливости</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modal-sergey" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-sergey')">&times;</span>
+      <h2>Сергей Лебедев</h2>
+      <p>+375 29 987 65 43</p>
+      <p><a href="https://www.instagram.com/sergey_lebedev" target="_blank">www.instagram.com/sergey_lebedev</a></p>
+      <p>Стоимость персональной тренировки: 50 р.</p>
+      <p>Опыт работы: 9 лет</p>
+      <p>Стаж собственных тренировок: 16 лет</p>
+      <p>Образование: Международный сертификат по функциональному тренингу и кроссфиту.</p>
+      <p>Достижения:</p>
+      <ul>
+        <li>Победитель региональных соревнований по кроссфиту</li>
+        <li>Сертифицированный тренер по функциональной подготовке</li>
+      </ul>
+      <p>Специализация:</p>
+      <ul>
+        <li>Кроссфит</li>
+        <li>Функциональный тренинг</li>
+        <li>Интенсивные интервальные тренировки</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modal-natalia" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-natalia')">&times;</span>
+      <h2>Наталья Зайцева</h2>
+      <p>+375 29 876 54 32</p>
+      <p><a href="https://www.instagram.com/natalia_zaytseva" target="_blank">www.instagram.com/natalia_zaytseva</a></p>
+      <p>Стоимость персональной тренировки: 50 р.</p>
+      <p>Опыт работы: 5 лет</p>
+      <p>Стаж собственных тренировок: 10 лет</p>
+      <p>Образование: Сертифицированный тренер по танцевальным программам.</p>
+      <p>Достижения:</p>
+      <ul>
+        <li>Призер городских конкурсов по танцам</li>
+        <li>Сертификат международного уровня в области танцевальной аэробики</li>
+      </ul>
+      <p>Специализация:</p>
+      <ul>
+        <li>Танцевальные направления</li>
+        <li>Гибкость и пластика</li>
+        <li>Занятия для подростков</li>
+      </ul>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>О нас</h3>
+        <p>Мы стремимся предоставлять <br>лучший сервис и продукты<br>для наших клиентов.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Полезные ссылки</h3>
+        <p><a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/privacy_policy.html">Политика персональных данных</a></p>
+        <p><a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/news.html">Новости</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <p>Телефон: +375 (29) 631-55-21</p>
+        <p>Email: komissport@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Все права защищены | KOMISSPORT</p>
+    </div>
+  </footer>
+
+
+  <script src="sport.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+/* Стили для формы */
+.form-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .form input, .form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Стиль для секции hero на странице формы */
+  .hero {
+    background: #007bff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Запись на тренировку</title>
+  <link rel="stylesheet" href="sport.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="D:/КБиП/Интернет приложения (HTML)/проект_спорт/logo.png"> </img>
+    <nav class="list">
+      <a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/sport.html" class="list">Главная</a>
+      <a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/services.html"class="list">Услуги</a>
+      <a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/stocks.html"class="list">Акции</a>
+      <a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/about_us.html"class="list">О нас</a>
+    </nav>
+    <div class="phone">+375 (29) 631-55-21 </div>
+  </header>
+
+  <div class="text-container">
+    <span class="text">KOMISSPORT</span>
+ </div>
+ 
+ <section class="form-section">
+  <form action="#" method="POST" class="form" id="recordForm" onsubmit="return validateForm()">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required placeholder="Введите ваше имя" oninput="this.value = this.value.replace(/[^А-Яа-я]/g, '').slice(0, 12)">
+  
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phoneNumber" placeholder="+375(__)___-__-__" oninput="this.value = this.value.replace(/[^0-9+]/g, '').slice(0, 12)">
+     
+    <label for="service">Выберите услугу:</label>
+    <select id="service" name="service" required>
+      <option>Групповые тренировки</option>
+      <option>Персональные тренировки</option>
+      <option>Тренажерный зал</option>
+      <option>Пилатес</option>
+      <option>Зона СПА</option>
+      <option>Бассейн</option>
+    </select>
+  
+    <label for="date">Выберите дату:</label>
+    <input type="date" id="date" name="date" required>
+
+    <button type="submit" class="button_record" onclick="sendEmail()">Записаться</button>
+
+  </form>
+</section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>О нас</h3>
+        <p>Мы стремимся предоставлять<br>лучший сервис и продукты<br>для наших клиентов.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Полезные ссылки</h3>
+        <p><a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/privacy_policy.html">Политика персональных данных</a></p>
+        <p><a href="D:/КБиП/Интернет приложения (HTML)/проект_спорт/news.html">Новости</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <p>Телефон: +375 (29) 631-55-21</p>
+        <p>Email: komissport@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Все права защищены | KOMISSPORT</p>
+    </div>
+  </footer>
+  <script src="sport.js"> </script>
+ </body>
+</html>
