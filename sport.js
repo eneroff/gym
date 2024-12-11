@@ -69,23 +69,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-// отправка данных на почту
-  function sendEmail() {
-
+  function sendEmail(event) {
+    event.preventDefault(); // Предотвращаем отправку формы
+  
     var name = document.getElementById('name').value;
     var phone = document.getElementById('phoneNumber').value;
     var service = document.getElementById('service').value;
     var date = document.getElementById('date').value;
-    
+  
     var subject = "Запись на пробное занятие";
-    var body = "Здравствуйте!\n\nЯ хочу записаться на бесплатное пробное занятие.\n\n" + 
-               "Имя: " + name + "\n" +
-               "Телефон: " + phone + "\n" +
-               "Услуга: " + service + "\n" +
-               "Дата: " + date;
-    
+    var body = "Здравствуйте!\n\nЯ хочу записаться на бесплатное пробное занятие.\n\n" +
+      "Имя: " + name + "\n" +
+      "Телефон: " + phone + "\n" +
+      "Услуга: " + service + "\n" +
+      "Дата: " + date;
+  
     var mailtoLink = "mailto:komisarciksport@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-
     window.location.href = mailtoLink;
   }
   

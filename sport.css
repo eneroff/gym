@@ -4,6 +4,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-y: scroll;
 }
 
 ::selection{
@@ -105,7 +106,7 @@ p {
 }
 
 .phone {
-  margin-right: 20px;
+  margin-right: 40px;
   font-size: 1.2em;
 }
 
@@ -153,7 +154,7 @@ footer {
   padding: 20px 0;
   width: 100%;
   box-sizing: border-box;
-  max-height: 50px;
+  max-height: 70px;
 }
 
 .testimonials {
@@ -184,7 +185,7 @@ footer {
 .testimonial-content {
   background-color: #ffe23b;
   color: #000;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   padding: 30px;
   border-radius: 10px;
@@ -586,13 +587,13 @@ padding-left: 135px;
 .trainer-card h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
-  font-family: 'Cambria', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .trainer-card p {
   font-size: 1em;
   margin: 5px 0;
-  font-family: 'Cambria', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .modal {
@@ -642,7 +643,7 @@ padding-left: 135px;
 
 /* ------------------------- Политика персональных данных ------------------------- */
 .privacy-policy {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   color: #ffffff;
   margin: 20px auto;
@@ -796,4 +797,3 @@ header, section, footer {
   z-index: 10;
   position: relative;
 }
-

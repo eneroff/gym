@@ -25,7 +25,7 @@
  </div>
  
  <section class="form-section">
-  <form action="#" method="POST" class="form" id="recordForm" onsubmit="return validateForm()">
+  <form action="#" method="POST" class="form" id="recordForm" onsubmit="sendEmail(event)">
     <label for="name">Имя:</label>
     <input type="text" id="name" name="name" required placeholder="Введите ваше имя" oninput="this.value = this.value.replace(/[^А-Яа-я]/g, '').slice(0, 12)">
   
@@ -45,8 +45,7 @@
     <label for="date">Выберите дату:</label>
     <input type="date" id="date" name="date" required>
 
-    <button type="submit" class="button_record" onclick="sendEmail()">Записаться</button>
-
+    <button type="submit" class="button_record">Записаться</button>
   </form>
 </section>
 
